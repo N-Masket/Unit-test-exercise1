@@ -6,20 +6,20 @@ from main import factorial
 result = [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
 class TestMethods(unittest.TestCase):
     
-    #test case 1: input is 3, expected output is "fizz"
+    #test case 1: input is 3, expected output is "[1,2,'fizz']"
     def test_fizz(self):
         
         self.assertEqual(fizzbuzz(3), result[:3])
     
-    #test case 2: input is 5, expected output is "buzz"
+    #test case 2: input is 5, expected output is "[1,2,'fizz',4,'buzz']"
     def test_Buzz(self):
         self.assertEqual(fizzbuzz(5), result[:5])
 
-    #test case 3: input is 15, expected output is "fizzbuzz"
+    #test case 3: input is 15, expected output is full list]
     def  test_fizzbuzz(self):
         self.assertEqual(fizzbuzz(15), result)
    
-    #test case 4: input is 7, expected output is "7"
+    #test case 4: input is 7, expected output is [1,2,'fizz',4,'buzz','fizz',7]
     def test_fizzNum(self):
         self.assertEqual(fizzbuzz(7), result[:7])
         
